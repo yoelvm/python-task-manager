@@ -60,6 +60,8 @@
 
 # \- Eliminación de tareas
 
+# \- Gestión de prioridades: baja, media y alta
+
 # \- Persistencia de datos en `tasks.json`
 
 # \- Validación básica de entradas del usuario
@@ -114,7 +116,7 @@
 
 # En Windows, si `python` no funciona, usar:
 
-# 
+# ```markdown
 
 # py task\_manager.py
 
@@ -136,7 +138,9 @@
 
 # 5\. Salir
 
-# 
+# Lista de tareas:
+1. Preparar portfolio GitHub - Pendiente - Prioridad: alta
+2. Practicar Python - Pendiente - Prioridad: media
 
 # \## Aprendizajes aplicados
 
@@ -150,6 +154,8 @@
 
 # \- Validación de datos introducidos por el usuario
 
+# \- Validación de valores permitidos mediante listas
+
 # \- Flujo de trabajo con Git y GitHub
 
 # \- Documentación técnica en README
@@ -159,8 +165,6 @@
 # \## Próximas mejoras
 
 # 
-
-# \- Añadir prioridades: baja, media y alta
 
 # \- Añadir fechas límite a las tareas
 
@@ -181,4 +185,3 @@
 # Desarrollador Junior Python/Java en Madrid  
 
 # GitHub: https://github.com/yoelvm
-

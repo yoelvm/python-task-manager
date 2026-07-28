@@ -138,6 +138,13 @@
 
 # 5\. Salir
 
+# Selecciona una opción: 2
+ Escribe el nombre de la tarea: Preparar portfolio GitHub
+ Prioridad de la tarea (baja/media/alta): alta
+ Tarea añadida correctamente.
+
+# Selecciona una opción: 1
+
 # Lista de tareas:
 1. Preparar portfolio GitHub - Pendiente - Prioridad: alta
 2. Practicar Python - Pendiente - Prioridad: media

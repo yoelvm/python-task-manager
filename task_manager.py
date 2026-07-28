@@ -36,7 +36,8 @@ def list_tasks(tasks):
 
     for index, task in enumerate(tasks, start=1):
         status = "Completada" if task["completed"] else "Pendiente"
-        print(f"{index}. {task['title']} - {status}")
+        priority = task.get("priority", "media")
+        print(f"{index}. {task['title']} - {status} - Prioridad: {priority}")
 
 
 def add_task(tasks):
@@ -46,9 +47,16 @@ def add_task(tasks):
         print("La tarea no puede estar vacía.")
         return
 
+    priority = input("Prioridad de la tarea (baja/media/alta): ").strip().lower()
+
+    if priority not in ["baja", "media", "alta"]:
+        print("Prioridad no válida. Se asignará prioridad media.")
+        priority = "media"
+
     task = {
         "title": title,
-        "completed": False
+        "completed": False,
+        "priority": priority
     }
 
     tasks.append(task)

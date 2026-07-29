@@ -62,6 +62,8 @@
 
 # \- Gestión de prioridades: baja, media y alta
 
+# \- Fecha límite opcional para cada tarea
+
 # \- Persistencia de datos en `tasks.json`
 
 # \- Validación básica de entradas del usuario
@@ -139,15 +141,15 @@
 # 5\. Salir
 
 # Selecciona una opción: 2
- Escribe el nombre de la tarea: Preparar portfolio GitHub
- Prioridad de la tarea (baja/media/alta): alta
- Tarea añadida correctamente.
+ Escribe el nombre de la tarea: Enviar candidatura junior
+Prioridad de la tarea (baja/media/alta): alta
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 2026-07-30
+Tarea añadida correctamente.
 
 # Selecciona una opción: 1
 
 # Lista de tareas:
-1. Preparar portfolio GitHub - Pendiente - Prioridad: alta
-2. Practicar Python - Pendiente - Prioridad: media
+1. Enviar candidatura junior - Pendiente - Prioridad: alta - Fecha límite: 2026-07-30
 
 # \## Aprendizajes aplicados
 
@@ -163,23 +165,20 @@
 
 # \- Validación de valores permitidos mediante listas
 
+# \- Gestión de campos opcionales en estructuras de datos
+
 # \- Flujo de trabajo con Git y GitHub
 
 # \- Documentación técnica en README
 
 # 
 
-# \## Próximas mejoras
+## Próximas mejoras
 
-# 
-
-# \- Añadir fechas límite a las tareas
-
-# \- Separar la lógica en varios archivos
-
-# \- Crear tests básicos
-
-# \- Mejorar el manejo de errores
+- Separar la lógica en varios archivos
+- Crear tests básicos
+- Mejorar el manejo de errores
+- Validar el formato de fecha `YYYY-MM-DD`
 
 # 
 

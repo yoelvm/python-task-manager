@@ -37,8 +37,11 @@ def list_tasks(tasks):
     for index, task in enumerate(tasks, start=1):
         status = "Completada" if task["completed"] else "Pendiente"
         priority = task.get("priority", "media")
-        print(f"{index}. {task['title']} - {status} - Prioridad: {priority}")
-
+        due_date = task.get("due_date", "Sin fecha")
+    print(
+        f"{index}. {task['title']} - {status} "
+        f"- Prioridad: {priority} - Fecha límite: {due_date}"
+)
 
 def add_task(tasks):
     title = input("\nEscribe el nombre de la tarea: ").strip()
@@ -53,10 +56,16 @@ def add_task(tasks):
         print("Prioridad no válida. Se asignará prioridad media.")
         priority = "media"
 
+    due_date = input("Fecha límite de la tarea (YYYY-MM-DD, opcional): ").strip()
+
+    if not due_date:
+        due_date = "Sin fecha"
+
     task = {
         "title": title,
         "completed": False,
-        "priority": priority
+        "priority": priority,
+        "due_date": due_date
     }
 
     tasks.append(task)

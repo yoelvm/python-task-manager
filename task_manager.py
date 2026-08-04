@@ -1,9 +1,19 @@
 ﻿import json
 import os
-
+from datetime import datetime
 
 TASKS_FILE = "tasks.json"
 
+def validate_due_date(due_date):
+    if not due_date:
+        return "Sin fecha"
+
+    try:
+        datetime.strptime(due_date, "%Y-%m-%d")
+        return due_date
+    except ValueError:
+        print("Fecha no válida. Se asignará 'Sin fecha'.")
+        return "Sin fecha"
 
 def load_tasks():
     if not os.path.exists(TASKS_FILE):
@@ -38,10 +48,10 @@ def list_tasks(tasks):
         status = "Completada" if task["completed"] else "Pendiente"
         priority = task.get("priority", "media")
         due_date = task.get("due_date", "Sin fecha")
-    print(
-        f"{index}. {task['title']} - {status} "
-        f"- Prioridad: {priority} - Fecha límite: {due_date}"
-)
+        print(
+            f"{index}. {task['title']} - {status} "
+            f"- Prioridad: {priority} - Fecha límite: {due_date}"
+        )
 
 def add_task(tasks):
     title = input("\nEscribe el nombre de la tarea: ").strip()
@@ -57,9 +67,7 @@ def add_task(tasks):
         priority = "media"
 
     due_date = input("Fecha límite de la tarea (YYYY-MM-DD, opcional): ").strip()
-
-    if not due_date:
-        due_date = "Sin fecha"
+    due_date = validate_due_date(due_date)
 
     task = {
         "title": title,

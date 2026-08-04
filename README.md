@@ -159,43 +159,8 @@ Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
 Fecha no válida. Se asignará 'Sin fecha'.
 ```
 
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
-
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
-
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
-
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
-
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
-
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
-
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
-
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
-
 Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, asignar prioridad, añadir una fecha límite y listar las tareas guardadas.
-Si el usuario introduce una fecha con formato incorrecto:
 
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
-
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, a
 
 # \## Aprendizajes aplicados
 

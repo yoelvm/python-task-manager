@@ -64,6 +64,8 @@
 
 # \- Fecha límite opcional para cada tarea
 
+# \- Validación de formato de fecha `YYYY-MM-DD`
+
 # \- Persistencia de datos en `tasks.json`
 
 # \- Validación básica de entradas del usuario
@@ -150,6 +152,50 @@ Tarea añadida correctamente.
 
 # Lista de tareas:
 1. Enviar candidatura junior - Pendiente - Prioridad: alta - Fecha límite: 2026-07-30
+Si el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, aSi el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, asignar prioridad, añadir una fecha límite y listar las tareas guardadas.
+Si el usuario introduce una fecha con formato incorrecto:
+
+```text
+Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+Fecha no válida. Se asignará 'Sin fecha'.
+```
+
+Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, a
 
 # \## Aprendizajes aplicados
 
@@ -171,6 +217,8 @@ Tarea añadida correctamente.
 
 # \- Documentación técnica en README
 
+# \- Validación de fechas con `datetime.strptime`
+
 # 
 
 ## Próximas mejoras
@@ -178,7 +226,6 @@ Tarea añadida correctamente.
 - Separar la lógica en varios archivos
 - Crear tests básicos
 - Mejorar el manejo de errores
-- Validar el formato de fecha `YYYY-MM-DD`
 
 # 
 

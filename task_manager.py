@@ -4,6 +4,15 @@ from datetime import datetime
 
 TASKS_FILE = "tasks.json"
 
+def validate_priority(priority):
+    allowed_priorities = ["baja", "media", "alta"]
+
+    if priority in allowed_priorities:
+        return priority
+
+    print("Prioridad no válida. Se asignará prioridad media.")
+    return "media"
+
 def validate_due_date(due_date):
     if not due_date:
         return "Sin fecha"
@@ -14,6 +23,14 @@ def validate_due_date(due_date):
     except ValueError:
         print("Fecha no válida. Se asignará 'Sin fecha'.")
         return "Sin fecha"
+    
+def create_task(title, priority, due_date):
+    return {
+        "title": title,
+        "completed": False,
+        "priority": priority,
+        "due_date": due_date
+    }
 
 def load_tasks():
     if not os.path.exists(TASKS_FILE):
@@ -61,20 +78,12 @@ def add_task(tasks):
         return
 
     priority = input("Prioridad de la tarea (baja/media/alta): ").strip().lower()
-
-    if priority not in ["baja", "media", "alta"]:
-        print("Prioridad no válida. Se asignará prioridad media.")
-        priority = "media"
+    priority = validate_priority(priority)
 
     due_date = input("Fecha límite de la tarea (YYYY-MM-DD, opcional): ").strip()
     due_date = validate_due_date(due_date)
 
-    task = {
-        "title": title,
-        "completed": False,
-        "priority": priority,
-        "due_date": due_date
-    }
+    task = create_task(title, priority, due_date)
 
     tasks.append(task)
     save_tasks(tasks)

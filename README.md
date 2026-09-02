@@ -1,205 +1,146 @@
-# \# Python Task Manager
+# Python Task Manager
 
-# 
+Gestor de tareas por consola desarrollado en Python.
 
-# Gestor de tareas por consola desarrollado en Python.
+Este proyecto forma parte de mi portfolio como Desarrollador Junior. El objetivo es practicar lógica de programación, funciones, estructuras de datos, persistencia en JSON, validación de entradas, testing básico y flujo profesional con Git/GitHub.
 
-# 
+## Objetivo del proyecto
 
-# Este proyecto forma parte de mi portfolio como \*\*Desarrollador Junior Python/Java\*\*. El objetivo es practicar lógica de programación, estructuras de datos, funciones, persistencia en JSON y uso básico de Git/GitHub.
+Crear una aplicación sencilla de terminal que permita gestionar tareas mediante operaciones CRUD básicas, manteniendo los datos guardados en un archivo JSON.
 
-# 
+## Tecnologías utilizadas
 
-# \## Objetivo del proyecto
+- Python
+- JSON
+- unittest
+- Git
+- GitHub
+- Terminal / línea de comandos
 
-# 
+## Funcionalidades
 
-# Crear una aplicación sencilla de terminal que permita gestionar tareas mediante operaciones CRUD básicas:
+- Menú interactivo por consola
+- Crear tareas
+- Listar tareas guardadas
+- Marcar tareas como completadas
+- Eliminar tareas
+- Gestión de prioridades: baja, media y alta
+- Fecha límite opcional para cada tarea
+- Validación de formato de fecha YYYY-MM-DD
+- Persistencia de datos en tasks.json
+- Tests unitarios básicos con unittest
 
-# 
+## Estructura del proyecto
 
-# \- Crear tareas
+    python-task-manager/
+    ├── task_manager.py
+    ├── tasks.json
+    ├── README.md
+    ├── .gitignore
+    ├── LICENSE
+    └── tests/
+        ├── __init__.py
+        └── test_task_manager.py
 
-# \- Listar tareas
+## Cómo ejecutar el proyecto
 
-# \- Marcar tareas como completadas
+1. Clonar el repositorio:
 
-# \- Eliminar tareas
+    git clone https://github.com/yoelvm/python-task-manager.git
 
-# \- Guardar los datos en un archivo JSON
+2. Entrar en la carpeta del proyecto:
 
-# 
+    cd python-task-manager
 
-# \## Tecnologías utilizadas
+3. Ejecutar el programa:
 
-# 
+    python task_manager.py
 
-# \- Python
+En Windows, si python no funciona, usar:
 
-# \- JSON
+    py task_manager.py
 
-# \- Git
+## Demo de uso
 
-# \- GitHub
+Ejemplo de ejecución del programa en terminal:
 
-# \- Terminal / línea de comandos
+    === Python Task Manager ===
+    1. Ver tareas
+    2. Añadir tarea
+    3. Marcar tarea como completada
+    4. Eliminar tarea
+    5. Salir
 
-# 
+    Selecciona una opción: 2
+    Escribe el nombre de la tarea: Enviar candidatura junior
+    Prioridad de la tarea (baja/media/alta): alta
+    Fecha límite de la tarea (YYYY-MM-DD, opcional): 2026-07-30
+    Tarea añadida correctamente.
 
-# \## Funcionalidades
+    Selecciona una opción: 1
 
-# 
+    Lista de tareas:
+    1. Enviar candidatura junior - Pendiente - Prioridad: alta - Fecha límite: 2026-07-30
 
-# \- Menú interactivo por consola
-
-# \- Alta de tareas
-
-# \- Listado de tareas guardadas
-
-# \- Marcado de tareas como completadas
-
-# \- Eliminación de tareas
-
-# \- Gestión de prioridades: baja, media y alta
-
-# \- Fecha límite opcional para cada tarea
-
-# \- Validación de formato de fecha `YYYY-MM-DD`
-
-# \- Persistencia de datos en `tasks.json`
-
-# \- Validación básica de entradas del usuario
-
-# 
-
-# \## Estructura del proyecto
-
-# 
-
-# python-task-manager/
-
-# \- task\_manager.py
-
-# \- tasks.json
-
-# \- README.md
-
-# \- .gitignore
-
-# \- LICENSE
-
-# 
-
-# \## Cómo ejecutar el proyecto
-
-# 
-
-# 1\. Clonar el repositorio:
-
-# 
-
-# git clone https://github.com/yoelvm/python-task-manager.git
-
-# 
-
-# 2\. Entrar en la carpeta del proyecto:
-
-# 
-
-# cd python-task-manager
-
-# 
-
-# 3\. Ejecutar el programa:
-
-# 
-
-# python task\_manager.py
-
-# 
-
-# En Windows, si `python` no funciona, usar:
-
-# ```markdown
-
-# py task\_manager.py
-
-# 
-
-# \## Ejemplo de uso
-
-# 
-
-# === Python Task Manager ===
-
-# 1\. Ver tareas
-
-# 2\. Añadir tarea
-
-# 3\. Marcar tarea como completada
-
-# 4\. Eliminar tarea
-
-# 5\. Salir
-
-# Selecciona una opción: 2
- Escribe el nombre de la tarea: Enviar candidatura junior
-Prioridad de la tarea (baja/media/alta): alta
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 2026-07-30
-Tarea añadida correctamente.
-
-# Selecciona una opción: 1
-
-# Lista de tareas:
-1. Enviar candidatura junior - Pendiente - Prioridad: alta - Fecha límite: 2026-07-30
 Si el usuario introduce una fecha con formato incorrecto:
 
-```text
-Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
-Fecha no válida. Se asignará 'Sin fecha'.
-```
+    Fecha límite de la tarea (YYYY-MM-DD, opcional): 30/07/2026
+    Fecha no válida. Se asignará 'Sin fecha'.
 
-Esta demo muestra el flujo principal de la aplicación: crear una tarea, asignar prioridad, asignar prioridad, añadir una fecha límite y listar las tareas guardadas.
+## Cómo ejecutar los tests
 
+El proyecto incluye tests unitarios básicos para validar la lógica principal.
 
-# \## Aprendizajes aplicados
+Ejecutar tests:
 
-# 
+    python -m unittest discover -s tests
 
-# \- Uso de funciones en Python
+En Windows, si python no funciona, usar:
 
-# \- Lectura y escritura de archivos JSON
+    py -m unittest discover -s tests
 
-# \- Organización básica de código
+Resultado esperado:
 
-# \- Validación de datos introducidos por el usuario
+    Ran 6 tests
 
-# \- Validación de valores permitidos mediante listas
+    OK
 
-# \- Gestión de campos opcionales en estructuras de datos
+## Funciones principales
 
-# \- Flujo de trabajo con Git y GitHub
+- load_tasks(): carga las tareas guardadas desde tasks.json.
+- save_tasks(): guarda las tareas en formato JSON.
+- validate_priority(): valida prioridades permitidas.
+- validate_due_date(): valida fechas con formato YYYY-MM-DD.
+- create_task(): crea la estructura de una nueva tarea.
+- add_task(): solicita datos al usuario y añade una tarea.
+- list_tasks(): muestra todas las tareas guardadas.
+- complete_task(): marca una tarea como completada.
+- delete_task(): elimina una tarea existente.
 
-# \- Documentación técnica en README
+## Aprendizajes aplicados
 
-# \- Validación de fechas con `datetime.strptime`
-
-# 
+- Uso de funciones en Python
+- Lectura y escritura de archivos JSON
+- Validación de datos introducidos por el usuario
+- Validación de valores permitidos mediante listas
+- Validación de fechas con datetime.strptime
+- Gestión de campos opcionales en estructuras de datos
+- Separación de responsabilidades mediante funciones pequeñas
+- Tests unitarios básicos con unittest
+- Flujo de trabajo con Git y GitHub
+- Uso de ramas, commits, Pull Requests y merge a main
+- Documentación técnica en README
 
 ## Próximas mejoras
 
-- Separar la lógica en varios archivos
-- Crear tests básicos
+- Separar la lógica en varios módulos
 - Mejorar el manejo de errores
+- Añadir filtros por estado, prioridad o fecha límite
+- Añadir edición de tareas existentes
+- Crear una versión con interfaz gráfica o web
 
-# 
+## Autor
 
-# \## Autor
-
-# 
-
-# Yoel Velásquez  
-
-# Desarrollador Junior Python/Java en Madrid  
-
-# GitHub: https://github.com/yoelvm
+Yoel Velásquez  
+Desarrollador Junior Python/Java en Madrid  
+GitHub: https://github.com/yoelvm
